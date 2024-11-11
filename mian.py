@@ -74,4 +74,8 @@ def api_basket_remove():
 
 
 @app.route('/api/basket/update', methods=['POST'])
+def api_basket_update():
+    pass
+
+
 app.run(host='0.0.0.0', port=5000, debug=True)
