@@ -10,16 +10,15 @@ app = Flask(__name__, static_url_path='',
 @app.before_request
 def before_request():
     if request.path in ['/dashboard']:
-        pass  # auth check
-        # token = request.headers.get('Authorization')
-        # if not token:
-        #     return jsonify({'message': 'Missing token'}), 401
-        # try:
-        #     jwt.decode(token, 'secret', algorithms=['HS256'])
-        # except jwt.ExpiredSignatureError:
-        #     return jsonify({'message': 'Expired token'}), 401
-        # except jwt.InvalidTokenError:
-        #     return jsonify({'message': 'Invalid token'}), 401
+        token = request.json.get()
+        if not token:
+            return jsonify({'message': 'Missing token'}), 401
+        try:
+            jwt.decode(token, 'secret', algorithms=['HS256'])
+        except jwt.ExpiredSignatureError:
+            return jsonify({'message': 'Expired token'}), 401
+        except jwt.InvalidTokenError:
+            return jsonify({'message': 'Invalid token'}), 401
 
 
 @app.route('/')
