@@ -20,6 +20,8 @@ def before_request():
         except jwt.InvalidTokenError:
             return jsonify({'message': 'Invalid token'}), 401
 
+# genral
+
 
 @app.route('/')
 def index():
@@ -36,9 +38,56 @@ def signup():
     return render_template('signup.html')
 
 
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashboard.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
+@app.route('/termsandconditions')
+def termsandconditions():
+    return render_template('terms.html')
+
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+
+# customers
+
+
+@app.route("/serch")
+def serch():
+    return render_template('serch.html')
+
+
+@app.route("/bassket")
+def bassket():
+    return render_template('bassket.html')
+
+
+@app.route("/order")
+def order():
+    return render_template('order.html')
+
+
+@app.route("/payment")
+def payment():
+    return render_template('pay.html')
+
+
+# seller portal
+
+
+# staff portal
+
+
+# admin portal
 
 
 # API
