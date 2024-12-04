@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import json
+# import json
 import jwt
 
 
@@ -81,15 +81,6 @@ def payment():
     return render_template('pay.html')
 
 
-# seller portal
-
-
-# staff portal
-
-
-# admin portal
-
-
 # API
 
 # auth
@@ -111,6 +102,7 @@ def api_signup():
 
 @app.route('/api/basket/add', methods=['POST'])
 def api_basket_add():
+    pass
     # data = request.json
     # print(data)
     # return jsonify(data)
@@ -123,6 +115,28 @@ def api_basket_remove():
 
 @app.route('/api/basket/update', methods=['POST'])
 def api_basket_update():
+    pass
+
+# car sale
+
+
+@app.route("/api/seller/add")
+def seller_add():
+    pass
+
+
+@app.route("/api/seller/edit")
+def seller_edit():
+    pass
+
+
+@app.route("/api/seller/delete")
+def seller_delete():
+    pass
+
+
+@app.route("/api/seller/acept")
+def seller_acept():
     pass
 
 
