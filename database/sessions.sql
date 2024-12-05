@@ -1,10 +1,10 @@
 CREATE TABLE `clients` (
   `session_id` VARCHAR(36) NOT NULL,
   `previous_session_id` VARCHAR(36) DEFAULT NULL,
-  `user_id` INT(11),
+  `user_id` VARCHAR(36),
   `login_status` BOOLEAN DEFAULT FALSE,
   `token` VARCHAR(255) DEFAULT NULL,
-  `last_request` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- / last updated 
+  `last_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `save_data` TEXT,
   `ip_address` VARCHAR(45) NOT NULL,
   `user_agent` VARCHAR(255) NOT NULL,
