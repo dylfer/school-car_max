@@ -53,11 +53,28 @@ def bassket():
     return render_template('base.html', content_template='bassket.html', title='Basket')
 
 
-@genral_router.route("/order")
+@genral_router.route("/payment")
+def payment():
+    return render_template('base.html', content_template='pay.html', title='Payment')
+
+# account
+
+
+@genral_router.route("/dashboard")
+def dashboard():
+    return render_template('base.html', content_template='dashboard.html', title='Dashboard')
+
+
+@genral_router.route("/orders")
 def order():
     return render_template('base.html', content_template='order.html', title='Orders')
 
 
-@genral_router.route("/payment")
-def payment():
-    return render_template('base.html', content_template='pay.html', title='Payment')
+@genral_router.route("/settings")
+def settings():
+    return render_template('base.html', content_template='settings.html', title='Settings')
+
+
+@genral_router.route("/bookings")
+def bookings():
+    return render_template('base.html', content_template='bookings.html', title='Bookings')

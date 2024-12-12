@@ -9,7 +9,7 @@ function login() {
       // Handle success response
       let response = JSON.parse(xhr.responseText);
       if (response.message == "sucsess") {
-        window.location.href = "dashboard.html";
+        window.location.href = "dashboard";
       }
     } else if (xhr.readyState === 4) {
       // Handle error response
