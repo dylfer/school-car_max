@@ -1,12 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car max | Find your car</title>
-  </head>
-  <body>
-    <script src="serch.js"></script>
-  </body>
-</html>
+<!-- TODO  -->
+<div class="flex justify-between items-center p-4 bg-gray-100">
+  <input
+    type="text"
+    id="searchBar"
+    placeholder="Search..."
+    class="p-2 border rounded w-1/2"
+  />
+  <div>
+    <label for="sortDropdown" class="mr-2">Sort by:</label>
+    <select id="sortDropdown" class="p-2 border rounded">
+      <option value="price">Price</option>
+      <option value="date">Date</option>
+      <option value="popularity">Popularity</option>
+    </select>
+  </div>
+</div>
+<div class="flex">
+  <div id="filterList" class="w-1/5 p-4 bg-gray-50 border-r">
+    <h3 class="font-bold mb-2">Filters</h3>
+    <label class="block mb-2">
+      <span class="text-gray-700">Make</span>
+      <input
+        type="text"
+        class="mt-1 block w-full p-2 border rounded"
+        placeholder="e.g., Toyota"
+      />
+    </label>
+    <label class="block mb-2">
+      <span class="text-gray-700">Model</span>
+      <input
+        type="text"
+        class="mt-1 block w-full p-2 border rounded"
+        placeholder="e.g., Corolla"
+      />
+    </label>
+    <label class="block mb-2">
+      <span class="text-gray-700">Year</span>
+      <input
+        type="number"
+        class="mt-1 block w-full p-2 border rounded"
+        placeholder="e.g., 2020"
+      />
+    </label>
+    <label class="block mb-2">
+      <span class="text-gray-700">Colour</span>
+      <input
+        type="text"
+        class="mt-1 block w-full p-2 border rounded"
+        placeholder="e.g., Red"
+      />
+    </label>
+    <label class="block mb-2">
+      <span class="text-gray-700">Price</span>
+      <input
+        type="number"
+        class="mt-1 block w-full p-2 border rounded"
+        placeholder="e.g., 20000"
+      />
+    </label>
+  </div>
+  <div id="results" class="w-4/5 p-4">
+    <h3 class="font-bold mb-2">Search Results</h3>
+    <!-- Example of a search result item -->
+    <div class="border p-4 mb-4 rounded">
+      <h4 class="font-bold">Car Name</h4>
+      <p><strong>Make:</strong> Car Make</p>
+      <p><strong>Model:</strong> Car Model</p>
+      <p><strong>Year:</strong> Car Year</p>
+      <p><strong>VIN:</strong> Car VIN</p>
+      <p><strong>Price:</strong> $Car Price</p>
+      <p><strong>Colour:</strong> Car Colour</p>
+      <p><strong>Available:</strong> Yes/No</p>
+      <p><strong>MOT:</strong> Car MOT Date</p>
+      <p><strong>Other Details:</strong> Car Other Details</p>
+    </div>
+  </div>
+</div>
+<script src="serch.js"></script>

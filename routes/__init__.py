@@ -3,6 +3,7 @@ import jwt
 from routes.auth import auth_router
 from routes.genral import genral_router
 from routes.order import order_router
+from routes.cars import car_router
 
 
 def register_routes(app):
@@ -23,3 +24,4 @@ def register_routes(app):
     app.register_blueprint(auth_router)
     app.register_blueprint(genral_router)
     app.register_blueprint(order_router)
+    app.register_blueprint(car_router)

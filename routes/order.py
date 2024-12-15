@@ -1,6 +1,13 @@
+# TODO
 from flask import Blueprint
 
 order_router = Blueprint('order', __name__, url_prefix='/api/basket')
+
+
+@order_router.route('/get', methods=['POST'])
+def api_basket_get():
+    pass
+    # return jsonify(data)
 
 
 @order_router.route('/add', methods=['POST'])

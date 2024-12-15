@@ -1,9 +1,15 @@
 // TODO
-function login() {
+function signup() {
   let error = document.getElementById("error");
-  let username = document.getElementById("username").value; //username/email
+  let username = document.getElementById("name").value;
   let password = document.getElementById("password").value;
-  let rememberMe = document.getElementById("rememberMe").checked;
+  let confirmPassword = document.getElementById("confirmPassword").value;
+  let email = document.getElementById("email").value;
+  if (password !== confirmPassword) {
+    error.classList.remove("hidden");
+    error.innerHTML = "Passwords do not match";
+    return;
+  }
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "/api/auth/login", true);
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -22,7 +28,8 @@ function login() {
   };
   xhr.send(
     JSON.stringify({
-      username: username, // username or email
+      username: username,
+      email: email,
       password: password,
       rememberMe: rememberMe,
     })
@@ -30,4 +37,4 @@ function login() {
 }
 
 submit = document.getElementById("submit");
-submit.addEventListener("click", login);
+submit.addEventListener("click", signup);

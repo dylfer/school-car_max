@@ -1,0 +1,64 @@
+<!-- TODO -->
+<!-- Hero Section -->
+<div class="relative h-[76vh]">
+  <img
+    src="hero.jpg"
+    alt="Hero Image"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+  <div class="relative z-10 grid h-full grid-cols-2 gap-4 py-20 px-20 ml-10">
+    <div class="flex h-full flex-col justify-center items-start">
+      <h1 class="text-4xl font-bold mb-4">Hero Text</h1>
+      <p class="text-gray-700 mb-6">
+        This is the hero text that goes along with the hero image.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Popular Cars Section -->
+<div class="bg-white py-20 slide-in-right">
+  <h2 class="text-3xl ml-80 font-bold mb-8">Popular Cars</h2>
+  <div
+    class="flex gap-8 ml-80 overflow-x-scroll no-scrollbar min-h-40 rounded-l-2xl blue"
+  >
+    <!-- Add car listings here -->
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="p-20 bg-gray-100 w-fit slide-in-left rounded-r-2xl">
+  <div class="max-w-3xl mr-auto flex flex-col justify-start items-start">
+    <div class="text-left mb-6">
+      <h2 class="text-3xl font-bold mb-4">Find Your Car Now</h2>
+      <p class="text-gray-700 mb-6">
+        Use our search tool to find the perfect car for you. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Sed auctor, magna vel tincidunt
+        lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.
+      </p>
+    </div>
+    <div class="relative ml-auto">
+      <input
+        type="text"
+        class="bg-white rounded-full py-3 px-5 w-full"
+        placeholder="Search for cars"
+      />
+      <button class="absolute top-1/2 right-4 transform -translate-y-1/2">
+        <svg
+          class="h-6 w-6 text-gray-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<script src="index.js"></script>

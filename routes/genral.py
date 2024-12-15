@@ -20,6 +20,11 @@ def signup():
     return render_template('base.html', content_template='signup.html', title='Sign up')
 
 
+@genral_router.route('/forgotpassword')
+def forgotpassword():
+    return render_template('base.html', content_template='forgotpassword.html', title='Forgot password')
+
+
 @genral_router.route('/about')
 def about():
     return render_template('base.html', content_template='about.html', title='About')
@@ -58,6 +63,7 @@ def payment():
     return render_template('base.html', content_template='pay.html', title='Payment')
 
 # account
+# TODO add pages below
 
 
 @genral_router.route("/dashboard")
