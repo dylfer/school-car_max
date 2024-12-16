@@ -48,9 +48,9 @@ def privacy():
 # customers
 
 
-@genral_router.route("/serch")
+@genral_router.route("/search")
 def serch():
-    return render_template('base.html', content_template='serch.html', title='Serch')
+    return render_template('base.html', content_template='search.html', title='Serch')
 
 
 @genral_router.route("/bassket")

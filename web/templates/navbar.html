@@ -1,49 +1,77 @@
-<!-- TODO design -->
-<nav class="flex w-screen flex-row justify-between items-center blue p-2">
-  <div class="flex space-x-4">
-    <img src="/logo.png" alt="CAR MAX" class="w-20 h-15 m-1" />
-    <a
-      href="/"
-      class="rounded-xl text-white p-2 m-1 bg-gray-800 hover:bg-gray-700"
-    >
-      Home
-    </a>
-    <a
-      href="/serch"
-      class="rounded-xl text-white p-2 m-1 bg-gray-800 hover:bg-gray-700"
-    >
-      Find a car
-    </a>
-    <a
-      href="/about"
-      class="rounded-xl text-white p-2 m-1 bg-gray-800 hover:bg-gray-700"
-    >
-      About us
-    </a>
-    <a
-      href="/contact"
-      class="rounded-xl text-white p-2 m-1 bg-gray-800 hover:bg-gray-700"
-      >Contact us</a
-    >
-    <a
-      href="/contact"
-      class="rounded-xl text-white p-2 m-1 bg-gray-800 hover:bg-gray-700"
-    >
-      Support
-    </a>
-  </div>
-  <div class="flex">
-    <a
-      href="/login"
-      class="rounded-xl p-2 m-1 bg-blue-800 hover:bg-blue-700 text-white"
-    >
-      Login
-    </a>
-    <a
-      href="/signup"
-      class="rounded-xl p-2 m-1 mr-6 bg-slate-600 hover:bg-slate-500 text-white"
-    >
-      Sign up
-    </a>
+<nav class="blue font-semibold flex flex-row text-white">
+  <img src="/logo.png" alt="CAR MAX" class="h-[72px] px-5 ml-10" />
+  <div class="p-2 flex flex-row w-full justify-between items-center">
+    <div class="flex space-x-4">
+      <a
+        href="/"
+        class="rounded-xl p-3 px-4 m-1 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        Home
+      </a>
+      <a
+        href="/search"
+        class="rounded-xl p-3 px-4 m-1 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        Find a car
+      </a>
+      <a
+        href="/about"
+        class="rounded-xl p-3 px-4 m-1 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        About us
+      </a>
+      <a
+        href="/contact"
+        class="rounded-xl p-3 px-4 m-1 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        Contact us
+      </a>
+      <a
+        href="/support"
+        class="rounded-xl p-3 px-4 m-1 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        Support
+      </a>
+    </div>
+
+    <!-- Added Search Bar -->
+    <div class="flex items-center mx-6">
+      <form class="relative w-72">
+        <input
+          type="text"
+          placeholder="Search cars, models, brands..."
+          class="w-full p-2 pl-8 rounded-xl bg-[#0072C6] hover:bg-[#005A9E] focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-white"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 absolute left-2 top-1/2 transform -translate-y-1/2 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </form>
+    </div>
+
+    <div class="flex mr-10">
+      <a
+        href="/login"
+        class="rounded-xl p-3 px-4 m-1 hover:bg-[#005A9E] bg-[#003E6B] shadow-2xl"
+      >
+        Login
+      </a>
+      <a
+        href="/signup"
+        class="rounded-xl p-3 px-4 m-1 mr-6 bg-[#0072C6] hover:bg-[#005A9E] shadow-2xl"
+      >
+        Sign up
+      </a>
+    </div>
   </div>
 </nav>

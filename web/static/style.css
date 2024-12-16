@@ -38,6 +38,14 @@
   background-color: #00529f;
 }
 
+.yelow {
+  background-color: #ffd520;
+}
+
+.shadow-yellow {
+  --tw-shadow-color: #ffd520;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
